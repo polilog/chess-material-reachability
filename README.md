@@ -8,6 +8,24 @@ The certificate corpus and exact-set checker establish **29,045,304 reachable ma
 
 > **Scope:** The proof treats a material pair as unordered. It does not prove that all 58,084,310 color-oriented candidates are reachable in both orientations. Nor does it establish reachability of every board diagram with a valid material count. The Explorer tries the requested orientation and explicitly identifies any color-reversed witness.
 
+## Coverage statistics
+
+The main corpus stores **309,421 concrete game records**, **66,473 parameterized templates**, and **420 storage/deletion certificates** (376,314 records). A separate small-witness corpus adds 1,113 game records (1,110 mating games and three terminal branches), for **377,427 stored records** across these proof inputs. Counts are records, not necessarily distinct game sequences across corpora.
+
+| Proof method | Newly covered classes | Share of total |
+|---|---:|---:|
+| Concrete game positions | 2,974,817 | 10.24% |
+| Additional promotion variants of main games | 3,724,293 | 12.82% |
+| Additional parameterized templates | 22,040,450 | 75.88% |
+| Additional storage/deletion certificates | 305,744 | 1.05% |
+| **Total** | **29,045,304** | **100%** |
+
+![Horizontal bar chart of additional material classes by proof method](docs/figures/coverage-by-method.svg)
+
+![Stacked bar chart of material classes by total piece count and proof method](docs/figures/coverage-by-size.svg)
+
+Coverage is deduplicated up to color interchange and attributed in the order shown. The concrete stage includes all prefixes of the supplementary games and the initial position. A class may have several witnesses, so these are incremental counts, not standalone coverage or a measure of which method is mathematically indispensable. See [coverage statistics and methodology](docs/STATISTICS.md), [per-size data](results/coverage_breakdown.tsv) and the reproduction scripts.
+
 ## Try the interactive Explorer
 
 ![Chess Material Explorer showing a 14-queen proof game](docs/explorer-preview.png)

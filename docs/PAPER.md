@@ -174,6 +174,24 @@ The historical cumulative calculation reported equality for all sizes 2–32; th
 
 The consolidated corpus retains 309,421 ordinary game records, 66,473 parameterized template blocks, and 420 storage/deletion blocks, plus the small terminal-target witnesses. The subset was selected by crediting previously checked families and retaining certificates that added coverage; this selection heuristic is not used as proof of their validity. The standalone verifier independently replays the retained records and checks exact coverage. The corpus is sufficient, not asserted to be globally minimal. Search failure is not evidence of impossibility.
 
+### Coverage by certificate type
+
+The primary corpus comprises 376,314 records (309,421 ordinary games, 66,473 parameterized templates, 420 storage/deletion blocks). The supplementary small-witness files contain 1,113 more lines (1,110 mate-ending witnesses and three terminal branches). To measure the contribution of each method, we take successive unions: all concrete material profiles, promotion-domain expansions of the main games, parameterized template families, and finally storage/deletion coverage. The initial profile is included in the first stage. All entries are deduplicated modulo exchange of colors.
+
+| Proof method | Newly covered classes | Share of total |
+|---|---:|---:|
+| Concrete game positions | 2,974,817 | 10.24% |
+| Additional promotion variants of main games | 3,724,293 | 12.82% |
+| Additional parameterized templates | 22,040,450 | 75.88% |
+| Additional storage/deletion certificates | 305,744 | 1.05% |
+| **Total** | **29,045,304** | **100%** |
+
+![Coverage by proof method](figures/coverage-by-method.svg)
+
+![Coverage by number of pieces](figures/coverage-by-size.svg)
+
+The breakdown is descriptive, not a separate sufficiency proof or a minimality result. It depends on the chosen order, corpus and scope of concrete prefixes. The supplementary games are credited here at every prefix, whereas the primary verifier's small-witness output is restricted to 2–7 pieces; consequently the penultimate cumulative count in this analysis differs by one from the primary verifier's ordinary summary. The final verified set is identical. See [statistics methodology](STATISTICS.md) for reproduction and [machine-readable results](../results/coverage_breakdown.tsv).
+
 ### 6.1 Illustrative certificates
 
 The included PGN `examples/14_queens_game.pgn` reaches a board after Black's 129th move with nine white queens and five black queens, all 14 original nonking nonpawn pieces (including the original queens) and both kings retained, and no pawns. Four black pawns are captured; the other 12 original pawns promote. This is a useful test of the distinction between total material and type multiplicity. It is a synthetic proof game, not a historic competitive game. Compact independent-promotion, no-promotion deletion and promotion-plus-deletion examples are included under `proof/`. The much larger corpus establishes coverage, while these small examples illustrate the proof ideas without requiring millions of moves.

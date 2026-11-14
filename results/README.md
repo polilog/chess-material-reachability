@@ -7,6 +7,7 @@
 | `final_replay.log`, `final_verification_marker.json` | Fresh complete verification of the integrated 1.0.0 draft; marker records the matching manifest and summary hashes. |
 | `final_quick_checks.log`, `final_explorer_smoke.log`, `final_browser_checks.log` | Fresh quick-check suite, witness retrieval tests and Chromium UI checks (using a bridge to the live local HTTP server) for the integrated draft. |
 | `compact_replay.log` | Recorded complete replay of the consolidated inputs. |
+| `coverage_breakdown.tsv` | Per-size disjoint incremental coverage by proof method; see [methodology](../docs/STATISTICS.md). |
 | `corpus_counts.json` | Number of concrete, template and storage records. |
 | `environment.txt` | Reference Linux/Python/compiler/NumPy/zstd versions. |
 | `explorer_v2_smoke.log` | Recorded 10 concrete witness retrieval checks for Explorer v2, including invalid-input rejection. |
