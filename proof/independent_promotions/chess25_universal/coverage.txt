@@ -1,0 +1,5 @@
+Previously verified 28-piece archive: 369432 distinct 25-piece profiles
+Symbolic template: 62106 profiles
+Overlap: 655
+Union: 430883
+New: 61451

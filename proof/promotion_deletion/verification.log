@@ -1,0 +1,29 @@
+PASS: prefix 366 plies, 14 independent N/B/R/Q choices, no raw attacks on either king
+PASS: 22 independent deletion routes; longest 20 plies; max within-phase repeats 1 ; initial overlap 2
+PASS: common 17-ply two-knight mating suffix; no premature dead position or automatic draw
+White families 1398 black families 700 intersection 700
+Distinct unordered profiles 733950
+N	PROFILES
+4	1
+5	4
+6	20
+7	60
+8	170
+9	396
+10	868
+11	1716
+12	3235
+13	5719
+14	9726
+15	15705
+16	24270
+17	35475
+18	49373
+19	65187
+20	81956
+21	96873
+22	105455
+23	100716
+24	78645
+25	44520
+26	13860

@@ -1,0 +1,16 @@
+# Python and local environment
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+# Derived proof state and indexes
+replay*/
+*.state
+*.families
+*.storage.json
+*.validation
+# Transport archives are not repository contents
+*.zip
+*.zip.part*

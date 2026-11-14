@@ -1,0 +1,189 @@
+BEGIN 73016541456 8 6
+f2f3 a7a5 g2g4 b7b5 c2c4 b8a6 c4b5 g7g5 d2d4 f7f5 f1g2 a5a4 b1c3 c7c5 e2e4 a4a3 c3b1 c8b7 e4e5 a8b8 h2h3 d7d5 f3f4 e7e6 c1e3 b8c8 d1c2 f8g7 h3h4 d8d7 c2e2 d7d6 e5d6 e6e5 e3d2 a6b8 h4h5 c5c4 e2f3 h7h6 h1h3 b7c6 f3e4 g7f8 d2c1 f8g7 c1d2 e8d7 h3h1 c8f8 d2c1 c6a8 h1h3 g7f6 b2b4 f8d8 h3h1 d8e8 c1b2 a3b2 e4f3 f6d8 f3c3 d8b6 e1d1 e8d8 g2e4 d8c8 c3d3 b8c6 d3h3 c8e8 h3a3 b6c7 e4d3 e8b8 a3b3 c6a7 b1c3 c7a5 c3e2 a8b7 d3b1 b8e8 b3c3 a5c7 a2a3 e5e4 c3d3 c7a5 a3a4 d7e6 a1a2 e8a8 b5b6 a7c6 d3b3 e4e3 e2c3 c6a7 b3c2 g8e7 c3e4 a7c6 g1f3 a8f8 c2h2 b7a8 a2a3 c6a7 f3e5 a8b7 h2g2 e3e2 d1c2 f8a8 h1f1 a8d8 f1f3 a7b5 g2g1 b7c8 f3b3 d8g8 e5d3 g8g6 h5g6 d5e4 f4g5 
+MOVE f5f4
+MOVE b6b7
+MOVE h6h5
+MOVE g1e3
+MOVE c4c3
+MOVE g6g7
+MOVE h5h4
+MOVE g5g6
+MOVE f4f3
+MOVE d6d7
+MOVE h4h3
+MOVE e3d2
+MOVE e4e3
+MOVE d3c1
+MOVE a5d8
+MOVE a4a5
+MOVE e6f6
+MOVE a5a6
+MOVE h3h2
+MOVE b1a2
+PROM h2h1
+MOVE d4d5
+MOVE f6e5
+PROM g7g8
+PARK e7f5 f5e7 g8f6 f6e8 g8f7 f7e8 g8f8 f8e8 g8f8 f8e8 
+MOVE h8h7
+MOVE a6a7
+MOVE f3f2
+PROM a7a8
+PROM f2f1
+MOVE g6g7
+MOVE d8a5
+MOVE g4g5
+MOVE b5d4
+MOVE c2d3
+MOVE c3c2
+PROM b7b8
+PARK e5f5 f5e5 b8a6 a6c5 b8a7 a7c5 b8b5 b5c5 b8b6 b6c5 
+PROM b2b1
+MOVE g5g6
+MOVE h7h5
+MOVE d5d6
+MOVE e5f4
+MOVE b4b5
+MOVE f4g3
+MOVE b5b6
+MOVE h5h6
+MOVE b6b7
+MOVE g3h4
+MOVE d2c3
+MOVE a5c7
+MOVE c3a5
+MOVE c7d8
+SHIFT f1 b3c3 c3b3 f1h2 h2f3 f1g2 g2f3 f1f2 f2f3 f1f2 f2f3 
+MOVE a5c7
+MOVE h6h5
+MOVE a3a5
+MOVE h5h8
+MOVE b3b4
+MOVE e7f5
+MOVE c1b3
+MOVE d8e7
+MOVE b4b6
+MOVE e7f8
+MOVE c7c6
+MOVE f5e7
+MOVE c6b5
+MOVE h8h7
+MOVE b5b4
+MOVE h7h6
+MOVE b3a1
+MOVE e7d5
+SHIFT f3 b4a3 a3b4 f3d2 d2f1 f3g2 g2f1 f3f4 f4f1 f3h3 h3f1 
+MOVE b4c3
+PROM c2c1
+MOVE d3c4
+MOVE d5f4
+MOVE a1c2
+MOVE f8e7
+MOVE c3b3
+MOVE d4f3
+MOVE b6b5
+MOVE e7g5
+MOVE b3c3
+MOVE h6h7
+MOVE b5b3
+MOVE h4h3
+MOVE a5a7
+SHIFT c5 h3h4 h4h3 c5e6 e6c7 c5b6 b6c7 c5c6 c6c7 c5a5 a5c7 
+MOVE f3e5
+MOVE c4d4
+PROM e2e1
+PARK c3c6 c6c3 e1d3 d3f2 e1g3 g3f2 e1e2 e2f2 e1e2 e2f2 
+PROM g7g8
+PARK g5f6 f6g5 g8h6 h6f7 g8d5 d5f7 g8f8 f8f7 g8f8 f8f7 
+MOVE f4g2
+PROM d7d8
+PARK g2h4 h4g2 d8c6 c6e7 d8f6 f6e7 d8d7 d7e7 d8f6 f6e7 
+MOVE c8g4
+PROM b7b8
+MOVE g4e6
+MOVE g6g7
+MOVE e5c4
+MOVE c2b4
+MOVE g5h4
+MOVE b3a3
+MOVE e6g4
+MOVE d6d7
+MOVE h7h8
+MOVE c3d3
+MOVE c4b2
+MOVE d3e2
+MOVE h8h6
+MOVE a3a6
+MOVE h4g3
+MOVE b4d5
+MOVE h6f6
+MOVE e2d1
+MOVE e3e2
+MOVE d5e3
+PROM e2e1
+PROM g7g8
+MOVE f6c6
+PROM d7d8
+SHIFT e7 g4c8 c8g4 e7g6 g6e5 e7f6 f6e5 e7e4 e4e5 e7e4 e4e5 
+MOVE g2h4
+MOVE a6a5
+MOVE g4d7
+MOVE d1e2
+MOVE c6f6
+MOVE e2c4
+MOVE f6e6
+SHIFT f2 a5c5 c5a5 f2g4 g4h2 f2g1 g1h2 f2g2 g2h2 f2g2 g2h2 
+MOVE a5c5
+MOVE e6b6
+MOVE a7b7
+MOVE d7f5
+MOVE c4a4
+MOVE b6e6
+MOVE a4c6
+MOVE e6d6
+MOVE c6d5
+MOVE d6f6
+MOVE e3g4
+MOVE f6b6
+MOVE c5c6
+MOVE b2d3
+MOVE c6g6
+MOVE b6a6
+MOVE a2b3
+SHIFT c7 a6a2 a2a6 c7e6 e6c5 c7d6 d6c5 c7c8 c8c5 c7e7 e7c5 
+MOVE d3b4
+MOVE b7b6
+MOVE g3f4
+MOVE b6b5
+SHIFT e8 a6b6 b6a6 e8d6 d6b7 e8c6 c6b7 e8e7 e7b7 e8e7 e7b7 
+MOVE h4g2
+MOVE g6f6
+MOVE f5d7
+MOVE b3a2
+SHIFT d8 d7c8 c8d7 d8e6 e6f8 d8e7 e7f8 d8e8 e8f8 d8e8 e8f8 
+MOVE g2e3
+MOVE f6b6
+MOVE a6a7
+MOVE a2c4
+SHIFT b8 a7a1 a1a7 b8c6 c6d8 b8c7 c7d8 b8c8 c8d8 b8c8 c8d8 
+SHIFT f8 a7a2 a2a7 f8g6 g6e7 f8d6 d6e7 f8e8 e8e7 f8e8 e8e7 
+MOVE d7f5
+MOVE b6e6
+MOVE f5e4
+MOVE g4f6
+MOVE e4g6
+MOVE f6e8
+MOVE a7a3
+MOVE e6a6
+MOVE g6h7
+MOVE d5d6
+SHIFT e7 h7e4 e4h7 e7d5 d5f6 e7g5 g5f6 e7e6 e6f6 e7g5 g5f6 
+MOVE a3a1
+MOVE b5b6
+MOVE h7d3
+MOVE d6e7
+SHIFT f7 e3d5 d5e3 f7h8 h8g6 f7h5 h5g6 f7g7 g7g6 f7g7 g7g6 
+MOVE f4g3
+MOVE c4a2
+MOVE g3h4
+STORAGE e8 d6 e3 d5

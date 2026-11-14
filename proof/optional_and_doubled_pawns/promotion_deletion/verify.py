@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""Certificate: fourteen independent promotions AND independent deletions.
+No enumeration of promotion assignments, deletion subsets, or material profiles."""
+from inspect_master import *
+from collections import defaultdict
+import json
+
+def knight(a,z):return abs(a%8-z%8)*abs(a//8-z//8)==2
+def route(b,c,home,other,wait,target):
+    ek=king(b,-c);q=deque([home]);prev={home:None}
+    while q and target not in prev:
+        a=q.popleft()
+        for z in range(64):
+            if not knight(a,z) or z in prev or z==wait or knight(z,ek) or (b[z] and z!=target):continue
+            prev[z]=a;q.append(z)
+    assert target in prev
+    path=[target]
+    while prev[path[-1]] is not None:path.append(prev[path[-1]])
+    path.reverse();tour=path+path[-2::-1];seq=[]
+    for i,(a,z) in enumerate(zip(tour,tour[1:])):
+        m=name(a)+name(z);w=name(wait if i%2 else other)+name(other if i%2 else wait)
+        seq.extend([m,w] if st.c==c else [w,m])
+    return seq
+
+def robust(b,z,c,optional):
+    core=[p if i not in optional else 0 for i,p in enumerate(b)]
+    if attacked(core,z,c):return True
+    for i in optional:
+        if b[i]*c>0:
+            core[i]=b[i]
+            if attacked(core,z,c):return True
+            core[i]=0
+    return False
+
+def count_side(a,b,m,n):
+    # Polynomial DP for intersection of two side families. A count t has
+    # excess cost max(0,t-ai) in the first, max(0,t-bi) in the second.
+    dp={(0,0,0):1}
+    for ai,bi in zip(a,b):
+        nd=defaultdict(int)
+        for (i,j,k),v in dp.items():
+            for t in range(min(ai+m-i,bi+n-j)+1):
+                u=i+max(0,t-ai);w=j+max(0,t-bi)
+                nd[u,w,k+t]+=v
+        dp=nd
+    out=Counter()
+    for (i,j,k),v in dp.items():out[k+2]+=v # king + mandatory knight
+    return out
+
+def mul(a,b):
+    c=Counter()
+    for i,v in a.items():
+        for j,w in b.items():c[i+j]+=v*w
+    return c
+
+st,h=replay_prefix();b=st.b;c=st.c;hw,ww,hb,wb=h;ks={s:king(b,s) for s in (1,-1)};homes={1:hw,-1:hb};waits={1:ww,-1:wb};core={ks[1],ks[-1],hw,hb};optional={i for i,p in enumerate(b) if p and i not in core}
+assert (st.plies,st.half,c)==(366,89,1)
+assert b[hw]==2 and b[hb]==-2 and len(optional)==22 and b.count(7)==8 and b.count(-7)==6
+assert len(set(h))==4 and not b[ww] and not b[wb]
+# Every nonking piece is incapable of checking the opposing king on an empty
+# board, even in the union Q+N model. Kings are non-adjacent by the prefix.
+for i,p in enumerate(b):
+    if p and abs(p)!=6:
+        side=sgn(p);assert not attacked([p if j==i else 0 for j in range(64)],ks[-side],side)
+print('PASS: prefix 366 plies, 14 independent N/B/R/Q choices, no raw attacks on either king')
+cert=[];maxphase=0;maxlength=0;maxfirst=0
+for z in sorted(optional):
+    side=-sgn(b[z]);seq=route(b,side,homes[side],homes[-side],waits[-side],z)
+    cb=b.copy();turn=c;opt=optional-{z};caps=0;phase=Counter();first=Counter(st.reps)
+    phase[sig(cb,turn)]+=1;pre=True
+    for m in seq:
+        a,v,pr=parse(m);assert a not in opt and v not in opt and not pr
+        captured=bool(cb[v]);nb=moved(cb,turn,m);assert nb is not None
+        assert not robust(nb,king(nb,turn),-turn,opt)
+        assert all(nb[i]==b[i] for i in opt)
+        if captured:
+            assert v==z and cb[v]*turn<0;caps+=1;maxphase=max(maxphase,max(phase.values()));phase=Counter();pre=False
+        cb=nb;turn=-turn;phase[sig(cb,turn)]+=1
+        if pre:
+            first[sig(cb,turn)]+=1
+            maxfirst=max(maxfirst,max(first.values()))
+    expected=b.copy();expected[z]=0
+    assert cb==expected and turn==c and caps==1
+    maxphase=max(maxphase,max(phase.values()));maxlength=max(maxlength,len(seq));cert.append([name(z),seq])
+assert maxfirst<=4 and maxphase<=2
+# Subsequent phases: deleting a piece strictly decreases material count, so
+# only tail of previous and head of next operation can share a position.
+# For smaller subsets, equality of color-occupancy projections along a module
+# is unaffected by removing stationary pieces (the routes avoid them).
+assert st.half+maxlength<150 and 2*maxlength<150
+print('PASS: 22 independent deletion routes; longest',maxlength,'plies; max within-phase repeats',maxphase,'; initial overlap',maxfirst)
+# Common mating continuation after all optional pieces are deleted.
+cb=[p if i in core else 0 for i,p in enumerate(b)];s=State(cb,c);mate=Path(__file__).with_name('mate.txt').read_text().split()
+for m in mate:s.play(m)
+assert attacked(s.b,king(s.b,s.c),-s.c)
+for a,p in enumerate(s.b):
+    if p*s.c<=0:continue
+    for z in range(64):assert moved(s.b,s.c,name(a)+name(z)) is None
+assert max(s.reps.values())<=2 and maxlength+len(mate)<150
+# Only the previous final deletion phase shares the core material count.
+print('PASS: common 17-ply two-knight mating suffix; no premature dead position or automatic draw')
+# Exact side capacity vectors, P absent; N is beyond the retained helper.
+a=[b.count(t)-(t==2) for t in (2,3,4,5)]
+d=[b.count(-t)-(t==2) for t in (2,3,4,5)]
+assert a==[0,1,2,1] and d==[1,2,1,0]
+W=count_side(a,a,8,8);B=count_side(d,d,6,6);I=count_side(a,d,8,6)
+P=mul(W,B);II=mul(I,I)
+for n in range(4,27):
+    diag=I[n//2] if n%2==0 else 0
+    assert (II[n]-diag)%2==0
+    P[n]-=(II[n]-diag)//2
+assert all(v>=0 for v in P.values())
+print('White families',sum(W.values()),'black families',sum(B.values()),'intersection',sum(I.values()))
+print('Distinct unordered profiles',sum(P.values()))
+print('N\tPROFILES')
+for n in range(4,27):print(n,P[n],sep='\t')
+Path(__file__).with_name('deletions.json').write_text(json.dumps(cert,separators=(',',':'))+'\n')
+Path(__file__).with_name('counts.tsv').write_text('N\tprofiles\n'+''.join(f'{n}\t{P[n]}\n' for n in range(4,27)))

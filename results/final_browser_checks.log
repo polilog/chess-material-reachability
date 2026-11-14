@@ -1,0 +1,5 @@
+Browser: system Chromium; local URL navigation was blocked by the test environment policy. The actual served HTML was injected into Chromium and fetch was bridged to the live local HTTP endpoint.
+PASS initial material: 15 matching positions
+PASS 14 queens: first match at ply 258
+PASS match navigation and highlighting
+PASS invalid extra queen blocked at 32 pieces

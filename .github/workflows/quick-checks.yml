@@ -1,0 +1,29 @@
+name: Quick mathematical and certificate checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python src/upper_bound.py
+      - run: python examples/small/check.py
+      - run: python src/check_example.py
+      - run: |
+          cd proof/independent_promotions/chess25_universal
+          python verify.py
+      - run: |
+          cd proof/no_promotion_deletion/chess_math_proof
+          python verify.py
+      - run: |
+          cd proof/promotion_deletion
+          python verify.py
+      - run: |
+          cd proof/optional_and_doubled_pawns
+          python verify_all.py

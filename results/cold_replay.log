@@ -1,0 +1,312 @@
+Publication audit, 2026-11-14. Actual component outputs from raw replay.
+First pass omitted 35 original size-26 records; exact missing list and reconstructed table stored separately.
+
+=== game_0.log ===
+10000 valid 9999 excluded 1 families 143450
+20000 valid 19999 excluded 1 families 275820
+30000 valid 29999 excluded 1 families 409782
+40000 valid 39999 excluded 1 families 545256
+50000 valid 49999 excluded 1 families 667571
+60000 valid 59999 excluded 1 families 786664
+70000 valid 69999 excluded 1 families 904018
+80000 valid 79999 excluded 1 families 1021122
+90000 valid 89999 excluded 1 families 1137663
+100000 valid 99999 excluded 1 families 1254507
+110000 valid 109999 excluded 1 families 1365568
+120000 valid 119999 excluded 1 families 1483093
+130000 valid 129999 excluded 1 families 1600806
+140000 valid 139999 excluded 1 families 1717694
+150000 valid 149999 excluded 1 families 1829887
+160000 valid 159999 excluded 1 families 1939946
+170000 valid 169999 excluded 1 families 2051048
+180000 valid 179999 excluded 1 families 2168075
+190000 valid 189999 excluded 1 families 2292392
+200000 valid 199999 excluded 1 families 2441325
+210000 valid 208725 excluded 1275 families 2571334
+DONE 217860 valid 208725 excluded 9135 families 2571334
+
+=== game_1.log ===
+10000 valid 10000 excluded 0 families 144213
+20000 valid 20000 excluded 0 families 276425
+30000 valid 30000 excluded 0 families 411446
+40000 valid 40000 excluded 0 families 546221
+50000 valid 50000 excluded 0 families 667130
+60000 valid 60000 excluded 0 families 785251
+70000 valid 70000 excluded 0 families 902875
+80000 valid 80000 excluded 0 families 1020811
+90000 valid 90000 excluded 0 families 1137431
+100000 valid 100000 excluded 0 families 1253363
+110000 valid 110000 excluded 0 families 1363812
+120000 valid 120000 excluded 0 families 1481796
+130000 valid 130000 excluded 0 families 1597984
+140000 valid 140000 excluded 0 families 1715131
+150000 valid 150000 excluded 0 families 1827067
+160000 valid 160000 excluded 0 families 1938718
+170000 valid 170000 excluded 0 families 2050838
+180000 valid 180000 excluded 0 families 2168391
+190000 valid 190000 excluded 0 families 2291775
+200000 valid 200000 excluded 0 families 2441088
+210000 valid 208725 excluded 1275 families 2571165
+DONE 217860 valid 208725 excluded 9135 families 2571165
+
+=== game_2.log ===
+10000 valid 9999 excluded 1 families 143185
+20000 valid 19999 excluded 1 families 275518
+30000 valid 29999 excluded 1 families 410090
+40000 valid 39999 excluded 1 families 545860
+50000 valid 49999 excluded 1 families 666898
+60000 valid 59999 excluded 1 families 785926
+70000 valid 69999 excluded 1 families 902917
+80000 valid 79999 excluded 1 families 1020546
+90000 valid 89999 excluded 1 families 1137824
+100000 valid 99999 excluded 1 families 1254084
+110000 valid 109999 excluded 1 families 1364604
+120000 valid 119999 excluded 1 families 1482889
+130000 valid 129999 excluded 1 families 1600117
+140000 valid 139999 excluded 1 families 1716992
+150000 valid 149999 excluded 1 families 1829893
+160000 valid 159999 excluded 1 families 1940876
+170000 valid 169999 excluded 1 families 2051626
+180000 valid 179999 excluded 1 families 2170409
+190000 valid 189999 excluded 1 families 2294742
+200000 valid 199999 excluded 1 families 2442618
+210000 valid 208724 excluded 1276 families 2572082
+DONE 217859 valid 208725 excluded 9134 families 2572084
+
+=== game_3.log ===
+10000 valid 9999 excluded 1 families 144203
+20000 valid 19999 excluded 1 families 276417
+30000 valid 29999 excluded 1 families 410057
+40000 valid 39999 excluded 1 families 546553
+50000 valid 49999 excluded 1 families 666888
+60000 valid 59999 excluded 1 families 785246
+70000 valid 69999 excluded 1 families 902406
+80000 valid 79999 excluded 1 families 1019704
+90000 valid 89999 excluded 1 families 1136014
+100000 valid 99999 excluded 1 families 1251986
+110000 valid 109999 excluded 1 families 1362532
+120000 valid 119999 excluded 1 families 1480165
+130000 valid 129999 excluded 1 families 1597399
+140000 valid 139999 excluded 1 families 1713805
+150000 valid 149999 excluded 1 families 1826628
+160000 valid 159999 excluded 1 families 1938858
+170000 valid 169999 excluded 1 families 2051765
+180000 valid 179999 excluded 1 families 2169878
+190000 valid 189999 excluded 1 families 2295002
+200000 valid 199999 excluded 1 families 2443894
+210000 valid 208724 excluded 1276 families 2574703
+DONE 217859 valid 208724 excluded 9135 families 2574703
+
+=== chesstemplates.log ===
+old_0.txt 12238 66 201598
+old_1.txt 12233 70 200058
+old_2.txt 12248 55 201229
+old_3.txt 12241 62 200710
+
+=== s26g_0.log ===
+DONE 1598 valid 1598 excluded 0 families 30718
+
+=== s26g_1.log ===
+DONE 1598 valid 1598 excluded 0 families 29894
+
+=== s26g_2.log ===
+DONE 1598 valid 1598 excluded 0 families 30166
+
+=== s26g_3.log ===
+DONE 1597 valid 1597 excluded 0 families 30059
+
+=== d24g.log ===
+DONE 6180 valid 6180 excluded 0 families 112303
+
+=== stage26/replay.log ===
+part_0.txt 5167 0 92404
+part_1.txt 5167 0 91307
+part_2.txt 5167 0 91747
+part_3.txt 5166 0 92405
+
+=== stage24_25/replay.log ===
+grid_0.txt 539 0 8023
+grid_1.txt 571 0 8449
+grid_2.txt 629 0 9347
+grid_3.txt 511 0 7521
+multi_0.txt 483 0 7441
+multi_1.txt 425 0 6526
+multi_2.txt 490 0 7577
+multi_3.txt 394 0 6492
+target_grid_0_0.txt 932 0 12456
+target_grid_0_1.txt 731 0 9806
+target_grid_0_2.txt 893 0 11868
+target_grid_0_3.txt 1189 0 14385
+target_grid_1_0.txt 270 0 4770
+target_grid_1_1.txt 259 0 4368
+target_grid_1_2.txt 267 0 4752
+target_grid_1_3.txt 275 0 4826
+target_grid_2_0.txt 33 0 753
+target_grid_2_1.txt 26 0 635
+target_grid_2_2.txt 23 0 533
+target_grid_2_3.txt 29 0 687
+special_2.txt 55 0 598
+special_3.txt 54 0 539
+special_4.txt 63 0 690
+special_5.txt 71 0 881
+
+=== final/replay.log ===
+cap23_0.txt 1972 0 27687
+cap23_1.txt 1970 0 28091
+cap23_2.txt 1934 0 27591
+cap23_3.txt 1960 0 27566
+max_0.txt 3758 0 51728
+max_1.txt 3751 0 51547
+max_2.txt 3744 0 50978
+max_3.txt 3764 0 51235
+split_0.txt 481 0 6036
+split_1.txt 479 0 6074
+split_2.txt 480 0 6015
+split_3.txt 476 0 5890
+exact_0.txt 185 0 2815
+exact_1.txt 200 0 2805
+exact_2.txt 177 0 2760
+exact_3.txt 188 0 2708
+max2_0.txt 24 0 396
+max2_1.txt 22 0 321
+max2_2.txt 21 0 399
+max2_3.txt 24 0 313
+exact2_0.txt 38 0 655
+exact2_1.txt 39 0 660
+exact2_2.txt 38 0 603
+exact2_3.txt 38 0 622
+exact3_0.txt 7 0 93
+exact3_1.txt 6 0 79
+exact3_2.txt 6 0 57
+exact3_3.txt 6 0 67
+
+=== storage.log ===
+stage24_25/storage_batch_0.txt 23 23 0 11
+stage24_25/storage_batch_1.txt 23 23 0 9
+stage24_25/storage_batch_2.txt 27 27 0 16
+stage24_25/storage_batch_3.txt 18 18 0 8
+final/storage_more_0.txt 81 81 0 45
+final/storage_more_1.txt 79 79 0 39
+final/storage_more_2.txt 85 85 0 52
+final/storage_more_3.txt 84 84 0 45
+
+=== recovered_games.log ===
+DONE 7 valid 7 excluded 0 families 194
+
+=== recovered_templates.log ===
+extra.txt 28 0 539
+
+=== aggregate.log ===
+Sides 8694
+small.keys families 0 extras 0
+game_0.families families 2571334 extras 0
+game_1.families families 5142499 extras 0
+game_2.families families 7714583 extras 0
+game_3.families families 10289286 extras 0
+templates/old_0.families families 10490884 extras 0
+templates/old_1.families families 10690942 extras 0
+templates/old_2.families families 10892171 extras 0
+templates/old_3.families families 11092881 extras 0
+stage26/data/games/part_0.families families 11123599 extras 0
+stage26/data/games/part_1.families families 11153493 extras 0
+stage26/data/games/part_2.families families 11183659 extras 0
+stage26/data/games/part_3.families families 11213718 extras 0
+stage26/data/templates/part_0.families families 11306122 extras 0
+stage26/data/templates/part_1.families families 11397429 extras 0
+stage26/data/templates/part_2.families families 11489176 extras 0
+stage26/data/templates/part_3.families families 11581581 extras 0
+stage24_25/new_concrete.families families 11693884 extras 0
+stage24_25/allfamilies/grid_0.families families 11701907 extras 0
+stage24_25/allfamilies/grid_1.families families 11710356 extras 0
+stage24_25/allfamilies/grid_2.families families 11719703 extras 0
+stage24_25/allfamilies/grid_3.families families 11727224 extras 0
+stage24_25/allfamilies/multi_0.families families 11734665 extras 0
+stage24_25/allfamilies/multi_1.families families 11741191 extras 0
+stage24_25/allfamilies/multi_2.families families 11748768 extras 0
+stage24_25/allfamilies/multi_3.families families 11755260 extras 0
+stage24_25/allfamilies/target_grid_0_0.families families 11767716 extras 0
+stage24_25/allfamilies/target_grid_0_1.families families 11777522 extras 0
+stage24_25/allfamilies/target_grid_0_2.families families 11789390 extras 0
+stage24_25/allfamilies/target_grid_0_3.families families 11803775 extras 0
+stage24_25/allfamilies/target_grid_1_0.families families 11808545 extras 0
+stage24_25/allfamilies/target_grid_1_1.families families 11812913 extras 0
+stage24_25/allfamilies/target_grid_1_2.families families 11817665 extras 0
+stage24_25/allfamilies/target_grid_1_3.families families 11822491 extras 0
+stage24_25/allfamilies/target_grid_2_0.families families 11823244 extras 0
+stage24_25/allfamilies/target_grid_2_1.families families 11823879 extras 0
+stage24_25/allfamilies/target_grid_2_2.families families 11824412 extras 0
+stage24_25/allfamilies/target_grid_2_3.families families 11825099 extras 0
+stage24_25/special_2.families families 11825697 extras 0
+stage24_25/special_3.families families 11826236 extras 0
+stage24_25/special_4.families families 11826926 extras 0
+stage24_25/special_5.families families 11827807 extras 0
+final/cap23_0.families families 11855494 extras 0
+final/cap23_1.families families 11883585 extras 0
+final/cap23_2.families families 11911176 extras 0
+final/cap23_3.families families 11938742 extras 0
+final/max_0.families families 11990470 extras 0
+final/max_1.families families 12042017 extras 0
+final/max_2.families families 12092995 extras 0
+final/max_3.families families 12144230 extras 0
+final/split_0.families families 12150266 extras 0
+final/split_1.families families 12156340 extras 0
+final/split_2.families families 12162355 extras 0
+final/split_3.families families 12168245 extras 0
+final/exact_0.families families 12171060 extras 0
+final/exact_1.families families 12173865 extras 0
+final/exact_2.families families 12176625 extras 0
+final/exact_3.families families 12179333 extras 0
+final/max2_0.families families 12179729 extras 0
+final/max2_1.families families 12180050 extras 0
+final/max2_2.families families 12180449 extras 0
+final/max2_3.families families 12180762 extras 0
+final/exact2_0.families families 12181417 extras 0
+final/exact2_1.families families 12182077 extras 0
+final/exact2_2.families families 12182680 extras 0
+final/exact2_3.families families 12183302 extras 0
+final/exact3_0.families families 12183395 extras 0
+final/exact3_1.families families 12183474 extras 0
+final/exact3_2.families families 12183531 extras 0
+final/exact3_3.families families 12183598 extras 0
+recovered_games.families families 12183792 extras 0
+../repo/proof/recovered/extra.families families 12184331 extras 0
+Extra 0
+
+=== finish.log ===
+N	upper	covered	missing
+2	1	1	0
+3	5	5	0
+4	30	30	0
+5	110	110	0
+6	365	365	0
+7	1001	1001	0
+8	2520	2520	0
+9	5720	5720	0
+10	12190	12190	0
+11	24309	24309	0
+12	46233	46233	0
+13	83817	83817	0
+14	146094	146094	0
+15	244350	244350	0
+16	393114	393114	0
+17	606777	606777	0
+18	899592	899592	0
+19	1279689	1279689	0
+20	1749075	1749075	0
+21	2294793	2294793	0
+22	2889021	2889021	0
+23	3477150	3477150	0
+24	3980871	3980871	0
+25	4243148	4243148	0
+26	3783484	3783484	0
+27	2178319	2178319	0
+28	613655	613655	0
+29	83625	83625	0
+30	6090	6090	0
+31	155	155	0
+32	1	1	0
+Total	29045304	29045304	0
+PASS: exact set equality, rebuilt from certificate outputs.
+
+=== Independent small terminal-target replay ===
+valid 1113 invalid 0

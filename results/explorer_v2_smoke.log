@@ -1,0 +1,11 @@
+PASS (8, 2, 2, 2, 1) (8, 2, 2, 2, 1) 0 Orthodox initial position
+PASS (0, 2, 2, 2, 9) (0, 2, 2, 2, 5) 258 games_1.families certificate #47004
+PASS (0, 2, 2, 2, 5) (0, 2, 2, 2, 9) 263 games_1.families certificate #47004
+PASS (0, 0, 0, 0, 9) (0, 0, 0, 0, 9) 322 templates_0.families certificate #5106
+PASS (0, 0, 0, 0, 0) (0, 0, 0, 0, 0) 329 dead_games.uci #1
+PASS (0, 0, 0, 0, 0) (0, 1, 0, 0, 0) 224 dead_games.uci #2
+PASS (0, 0, 1, 0, 0) (0, 0, 0, 0, 0) 386 dead_games.uci #3
+PASS (0, 9, 0, 0, 2) (1, 1, 1, 0, 0) 395 storage_0.txt certificate #68
+PASS (0, 0, 0, 3, 0) (2, 7, 0, 0, 0) 558 storage_0.txt certificate #11
+PASS (1, 0, 1, 2, 0) (1, 9, 0, 0, 0) 392 storage_0.txt certificate #278
+PASS: invalid material rejected; all 10 witnesses have the exact requested orientation.

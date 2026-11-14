@@ -1,0 +1,203 @@
+test_candidate_count (test_core.CoreTests.test_candidate_count) ... ok
+test_initial_moves (test_core.CoreTests.test_initial_moves) ... ok
+test_pinned_piece (test_core.CoreTests.test_pinned_piece) ... ok
+test_promotion_and_mate (test_core.CoreTests.test_promotion_and_mate) ... ok
+test_wildcard_attack (test_core.CoreTests.test_wildcard_attack) ... ok
+test_admissibility (test_explorer.ExplorerTests.test_admissibility) ... ok
+test_illegal_move (test_explorer.ExplorerTests.test_illegal_move) ... ok
+test_initial_position_pgn (test_explorer.ExplorerTests.test_initial_position_pgn) ... ok
+test_reversed_witness_pgn (test_explorer.ExplorerTests.test_reversed_witness_pgn) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.119s
+
+OK
+PASS: after 129...a1=Q+, White has 9 queens, Black has 5; 28 pieces.
+PASS: legal 271-ply game ending in checkmate.
+2 1
+3 5
+4 30
+5 110
+6 365
+7 1001
+8 2520
+9 5720
+10 12190
+11 24309
+12 46233
+13 83817
+14 146094
+15 244350
+16 393114
+17 606777
+18 899592
+19 1279689
+20 1749075
+21 2294793
+22 2889021
+23 3477150
+24 3980871
+25 4243148
+26 3783484
+27 2178319
+28 613655
+29 83625
+30 6090
+31 155
+32 1
+Total 29045304
+valid 1113 invalid 0
+2 1
+3 5
+4 30
+5 110
+6 365
+7 1001
+PASS: 1512 distinct material sets, exact coverage.
+PASS: after 129...a1=Q+, White has 9 queens, Black has 5; 28 pieces.
+PASS: legal 271-ply game ending in checkmate.
+PASS: all 4^15 promotion assignments are legal and have a common continuation to checkmate.
+Final 25-piece material profiles: 19800
+25-piece profiles including all promotion prefixes: 62106
+Promotion order (white, black): [(0, 0), (0, 1), (1, 1), (2, 1), (2, 2), (2, 3), (3, 3), (3, 4), (4, 4), (4, 5), (5, 5), (6, 5), (7, 5), (8, 5), (8, 6), (8, 7)]
+PARK macros: 3 milestone ply: 438 mate ply: 463
+Maximum conservative repetition count: 2
+PASS: 347-ply no-capture, no-promotion opening; all 32 pieces remain.
+PASS: 28 independent deletions, both helpers returned.
+PASS: common two-knight mating continuation.
+PASS: two helper-sacrifice modules and all pre-capture reversals.
+PASS: target histories have no fivefold repetition or 75-move draw (at most two phases per material count).
+PASS: 28 one-helper clearing modules.
+PASS: six robust one-helper mating continuations.
+PASS: six all-bishop profiles, including K vs K, without promotions.
+PASS: 118341 material profiles with original type limits, all reachable without any promotion.
+PASS: prefix 366 plies, 14 independent N/B/R/Q choices, no raw attacks on either king
+PASS: 22 independent deletion routes; longest 20 plies; max within-phase repeats 1 ; initial overlap 2
+PASS: common 17-ply two-knight mating suffix; no premature dead position or automatic draw
+White families 1398 black families 700 intersection 700
+Distinct unordered profiles 733950
+N	PROFILES
+4	1
+5	4
+6	20
+7	60
+8	170
+9	396
+10	868
+11	1716
+12	3235
+13	5719
+14	9726
+15	15705
+16	24270
+17	35475
+18	49373
+19	65187
+20	81956
+21	96873
+22	105455
+23	100716
+24	78645
+25	44520
+26	13860
+
+=== promotion_deletion ===
+PASS: prefix 366 plies, 14 independent N/B/R/Q choices, no raw attacks on either king
+PASS: 22 independent deletion routes; longest 20 plies; max within-phase repeats 1 ; initial overlap 2
+PASS: common 17-ply two-knight mating suffix; no premature dead position or automatic draw
+White families 1398 black families 700 intersection 700
+Distinct unordered profiles 733950
+N	PROFILES
+4	1
+5	4
+6	20
+7	60
+8	170
+9	396
+10	868
+11	1716
+12	3235
+13	5719
+14	9726
+15	15705
+16	24270
+17	35475
+18	49373
+19	65187
+20	81956
+21	96873
+22	105455
+23	100716
+24	78645
+25	44520
+26	13860
+
+=== optional_master ===
+PASS: prefix 381 plies, 9 four-way and 2 five-way choices; no raw attacks
+PASS: 21 independent deletion routes; longest 20 plies; max within-phase repeats 1 ; initial overlap 3
+PASS: common 16 ply two-knight mating suffix; no premature dead position or automatic draw
+Fixed optional material P,N,B,R,Q [2, 0, 2, 2, 1] [0, 1, 2, 0, 0] wildcards 5 6 5-way 2 0
+White families 2410 black families 518 intersection 459
+Distinct unordered profiles 1143269
+N	PROFILES
+4	1
+5	5
+6	29
+7	105
+8	335
+9	890
+10	2146
+11	4672
+12	9451
+13	17675
+14	30757
+15	49522
+16	74066
+17	102679
+18	131936
+19	155624
+20	165887
+21	155198
+22	122227
+23	76552
+24	34188
+25	9324
+
+=== doubled_pair ===
+PASS: reachable six-piece setup, 754 plies
+PASS: all 21 local branches with identical occupancy and side to move
+PASS: shared deletion and checkmate continuation for all choices
+15 distinct material outcomes: 1 + 4 + 10; no global profile enumeration
+
+=== Counting and reduction ===
+8 nonpawn loss classes: 248 oriented 483 fixed under swap 13
+Special 25-piece master: 1 pawn + 6 nonpawns of the smaller side
+Total sufficient classes for N<=24: 249 (conditional on master construction)
+N=25: 483 one-pawn-loss classes, 267 no-pawn-loss classes
+Old family: 733950 new family: 1143269
+Union: 1672566 intersection: 204653
+Union with >=1 pawn: 938616
+N	old	new	union
+4	1	1	1
+5	4	5	5
+6	20	29	29
+7	60	105	105
+8	170	335	335
+9	396	890	890
+10	868	2146	2146
+11	1716	4672	4673
+12	3235	9451	9480
+13	5719	17675	17872
+14	9726	30757	31583
+15	15705	49522	52014
+16	24270	74066	80003
+17	35475	102679	114587
+18	49373	131936	153145
+19	65187	155624	190292
+20	81956	165887	218729
+21	96873	155198	229173
+22	105455	122227	214403
+23	100716	76552	172564
+24	78645	34188	112833
+25	44520	9324	53844
+26	13860	0	13860

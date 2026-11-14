@@ -1,0 +1,56 @@
+{
+  "games_0.uci.zst": {
+    "sha256": "9e5e359f86cdc656e8128efe6228b5943fd482174730e0abe1a0cadd4c40d413",
+    "bytes": 17650639,
+    "raw_sha256": "767c8f5cabfefc1f894a03c0f8b5ceb9e7bb4f98c398342c0db62d0294ed5626",
+    "raw_bytes": 94663378
+  },
+  "games_1.uci.zst": {
+    "sha256": "a7e4771e3586aa3077a1eec14cad3a69eac4ab708efe6511cfa31711302fd30a",
+    "bytes": 18293428,
+    "raw_sha256": "14a849809d9af72b1e891e324f205ab9d0ae3aa3dfac3548b875b2e778cd8f7f",
+    "raw_bytes": 94655418
+  },
+  "games_2.uci.zst": {
+    "sha256": "7c006a96cc87a2ef9874ef672b58c7c353beeb66ab2de9ae15303498bcdd5431",
+    "bytes": 18297218,
+    "raw_sha256": "c18dd68da13989dcc511d6925c09a41184ecda7f3d14a27f29e8586ad70be927",
+    "raw_bytes": 94747996
+  },
+  "games_3.uci.zst": {
+    "sha256": "701b029fc6a50c6c179ad7db170c4607888855561cfdb381c868bffb9566037e",
+    "bytes": 18237787,
+    "raw_sha256": "21c5674b26173b1ad48157fcff9ec20988fdf6629d9e5f0c34913d26068b4679",
+    "raw_bytes": 94691804
+  },
+  "storage_0.txt.zst": {
+    "sha256": "0fe71176433deddffbb19eabdc8aa9fce3a36c56eddda62a3c17c75e37b36f84",
+    "bytes": 171972,
+    "raw_sha256": "0c1ad6c1695ac2f7326493cfe43c4b58d15ae603302a5d8b3eb1db8ca4aeac64",
+    "raw_bytes": 1195535
+  },
+  "templates_0.txt.zst": {
+    "sha256": "4ac189d952189b6e99aac0640727c9981989b2de7257435b121066fca9962f60",
+    "bytes": 5234264,
+    "raw_sha256": "d4b70c019ec8fed3b05a43c5746e1d97ad6b5959f377b4074e562594e1bf76fe",
+    "raw_bytes": 38071232
+  },
+  "templates_1.txt.zst": {
+    "sha256": "3c52c9a76f88b3b4787619d0d88dcdcb2e6b468dd954d28b6d69c7318ce45941",
+    "bytes": 5232142,
+    "raw_sha256": "aef7986983831fc577a86b7081026e5a437697a3279e7d5622826443b66529fd",
+    "raw_bytes": 38105419
+  },
+  "templates_2.txt.zst": {
+    "sha256": "03d97be88aa085c226a9648d65b74f1942abba923961b75d635f0e86eb63aedd",
+    "bytes": 5240386,
+    "raw_sha256": "94130aa7658d99d6b8731671c0e89ba98ce3f231edd082536056971f09da9643",
+    "raw_bytes": 38148279
+  },
+  "templates_3.txt.zst": {
+    "sha256": "4a80627b851b9a733e331ab7cb0c6d9a676bcdcfec85a1debeb1464c4e3ffa55",
+    "bytes": 5214560,
+    "raw_sha256": "5d46589d29027af30e8b23fc894648b4dd1b36291c78bfecc058eeebee6501cd",
+    "raw_bytes": 38053017
+  }
+}

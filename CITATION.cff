@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite this repository and the prior counting work by Tomic and Kryukov."
+title: "On the Sufficiency of Tomic's Criterion for Reachable Chess Material Configurations"
+type: software
+authors:
+  - family-names: "Palitai"
+    given-names: "Kanstantsin"
+version: "1.0.0"
+repository-code: "https://github.com/polilog/chess-material-reachability"
+abstract: "A computer-assisted investigation of material reachability in standard chess, with constructive certificates, independent counting, and a cold-replay verifier."
+keywords:
+  - chess
+  - combinatorics
+  - retrograde analysis
+  - proof games
+  - computer-assisted proof

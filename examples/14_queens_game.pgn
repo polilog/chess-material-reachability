@@ -1,0 +1,9 @@
+[Event "Constructed 14-queen game"]
+[Site "Computer-generated proof"]
+[Date "2026.11.14"]
+[Round "-"]
+[White "White"]
+[Black "Black"]
+[Result "1-0"]
+
+1. a3 Nc6 2. c4 b6 3. h3 e6 4. b4 Bc5 5. f3 g5 6. e3 f5 7. d4 f4 8. exf4 h5 9. d5 Rb8 10. d6 Nf6 11. dxc7 h4 12. Be2 a6 13. a4 d6 14. a5 Bd4 15. axb6 e5 16. g3 Ra8 17. gxh4 Ra7 18. h5 d5 19. f5 g4 20. Bb2 g3 21. c5 g2 22. h6 Qd7 23. b7 a5 24. Ra4 Rh7 25. b8=Q e4 26. h4 Rg7 27. b5 e3 28. h7 Ne7 29. h8=Q+ Kf7 30. c6 Qe8 31. Bf1 Rg5 32. Ne2 g1=Q 33. Ba3 Bb6 34. Qc1 Qf2+ 35. Kd1 Rg6 36. Bg2 Nh7 37. Qd2 Rg3 38. Bf1 d4 39. f6 Nf5 40. f4 Qe6 41. Kc2 d3+ 42. Kb2 Bb7 43. c8=Q Rg2 44. Bc5 Qe8 45. Qf8+ Kg6 46. Nec3 Rh2 47. f7 Qe5 48. c7 Ra8 49. Qcd8 Bd5 50. c8=Q Bf3 51. Qh8 e2 52. f8=Q e1=Q 53. Qa7 Bb7 54. Be2 Nh6 55. Ra2 Qf3 56. Bd4 a4 57. f5+ Kh5 58. Qhf6 Qd5 59. Be3 a3+ 60. Ka1 Rb8 61. Qb4 Nf8 62. Bf1 Qfg3 63. Qcc4 Qc7 64. Qd1+ Ng4 65. Qdb3 Qde5 66. Qcd5 d2 67. Bc4 d1=Q 68. Bf2 Nh7 69. Bd3 Qc6 70. Qc8 Qee6 71. Qdd8 Bc5 72. b6 Qe1e2 73. Qf7+ Kh6 74. f6 Ba8 75. b7 Qef3 76. Bf5 Rg2 77. h5 Qde1 78. Rh4 Bd4 79. Q4a4 Qg3 80. Qdb6 Qec4 81. Qff8+ Kg5 82. Qb2 Qg8 83. f7 Qgc7 84. Q6b3 Qb5 85. h6 Qbc6 86. Qe7+ Qf6 87. f8=Q Qgc4 88. Qbb4 Qd1 89. Qfg7+ Kf4 90. Qbc5 Qd7 91. Qce5+ Kf3 92. Qbb3 Qe8 93. Be6 Qh8 94. Bf7 Qd2 95. Qeb4 Qfd8 96. Rh1 Be3 97. Qbe7 Qb5 98. Qd1+ Qde2 99. Qd3 Qda5 100. Qcc7 Qd1 101. Rh5 Ngf6 102. Qgg5 Qab6 103. Qe7c5 Qh1 104. Q7d6 Rd8 105. b8=Q Be4 106. Qdc2 Qf8 107. Qde7 Qg7 108. Qab4 Rd7 109. Qca4 Ne8 110. Qcc8 Rc7 111. Bg8 Bd5 112. Qc4 Q5c5 113. Qch4 Rg1 114. Qed7 Nf8 115. Rd2 Qe6 116. h7 Bb3 117. h8=Q Nd6 118. Qca6 Qec4 119. Q4a5 Rg3 120. Qdf5+ Qf4 121. Qee7 a2 122. Q6b5 Rb7 123. Bg1 Qc4 124. Qfh3 Qfe4 125. Qac5 Qg4 126. Qed7 Qd3 127. Qdc8 Rc7 128. Bf7 Qgh7 129. Kb2 a1=Q+ 130. Qxa1 Nxb5 131. Qcxb5 Bxd2 132. Qcxc7 Bxg5 133. Qaa8+ Qge4 134. Qbxf8 Qxc3+ 135. Qhxc3+ Be3 136. Q4xg3# 1-0

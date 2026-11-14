@@ -1,0 +1,17 @@
+# Joint promotion/deletion certificate
+
+One finite certificate, with a 366-halfmove symbolic opening, 14 independently chosen promotions (8 white, 6 black), 22 commuting deletion modules and a 17-halfmove mating continuation. It proves 733,950 unordered pawnless material profiles, each retaining at least one knight per color. It does not prove all chess material profiles. It does not count these as new relative to the earlier corpus.
+
+## Reproduce
+
+Python 3, standard library only. Run `python3 verify.py`. The verifier checks each promotion branch locally (including parking and shifting), compares branch endpoints, overapproximates attacks by unknown pieces (queen or knight), verifies the 22 knight tours against arbitrary absent pieces, checks repetition/75-move bounds, and checks the final cooperative mate. It counts distinct profiles by polynomial coefficient convolution, not by enumerating them or the 4^14 promotion choices. `counts.tsv` is the count by material size. `reduction.py` reproduces the weighted-loss class counts for the conditional general reduction.
+
+Generate a concrete proof game for any certified profile with `python3 generate.py '1,0,0,8' '1,0,0,6' > example.uci`. Arguments are N,B,R,Q counts (including the required knight). Kings implicit, no pawns. Colors can be interchanged. The target ply is reported on stderr; the history continues to mate. Run `verify.py` first to regenerate `deletions.json` if needed.
+
+## Proof scope
+
+Both kings and two fixed knights are mandatory. Optional pieces are stationary during deletion modules. No piece (including an unknown promoted piece) attacks the other king on an otherwise empty board. A knight travels to a designated opponent piece and back; the other knight executes an alternating wait. Because the modules avoid every other occupied square and have no raw attacks, they remain legal after any subset of other pieces is removed. The operations commute. The four-piece core has a verified mate continuation. The initial prefix, all deletion operations and the core continuation obey conservative color-occupancy repetition bounds and the 75-move rule.
+
+White optional fixed material is N=0,B=1,R=2,Q=1, with 8 arbitrary promoted pieces; black is N=1,B=2,R=1,Q=0, with 6 arbitrary promoted pieces. The target optional vector t is feasible iff the sum of the positive excesses above those fixed counts is at most 8 or 6 respectively. There are 1398 white and 700 black choices; every black choice is also a white choice. Thus 1398*700 - choose(700,2) = 733950 unordered profiles. The family has no pawns and requires both knights. Its intersection with previously reported coverage has not been used to claim any increase in the global count.
+
+The weighted-loss reduction is conditional: for target N<=24, a subset of canonical losses of weight 8 (pawn loss weight 2, nonpawn loss weight 1) always exists. Such losses can unblock every survivor in an abstract pawn model by using one pawn capture in D disjoint pairs of files and two nonpawn captures in each remaining pair. The 1123 loss classes require real chess constructions with arbitrary survivor promotion/retention and deletion, including helperless cases; the present example is one pawnless subfamily, not a verification of all classes. For N=25, D=0, there are 267 further nonpawn-only seven-loss classes. Thus 1390 master classes would suffice for the remaining N<=25, subject to these unproved master properties.

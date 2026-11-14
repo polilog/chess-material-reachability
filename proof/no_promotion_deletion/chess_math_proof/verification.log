@@ -1,0 +1,9 @@
+PASS: 347-ply no-capture, no-promotion opening; all 32 pieces remain.
+PASS: 28 independent deletions, both helpers returned.
+PASS: common two-knight mating continuation.
+PASS: two helper-sacrifice modules and all pre-capture reversals.
+PASS: target histories have no fivefold repetition or 75-move draw (at most two phases per material count).
+PASS: 28 one-helper clearing modules.
+PASS: six robust one-helper mating continuations.
+PASS: six all-bishop profiles, including K vs K, without promotions.
+PASS: 118341 material profiles with original type limits, all reachable without any promotion.

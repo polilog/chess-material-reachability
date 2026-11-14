@@ -1,0 +1,101 @@
+
+=== promotion_deletion ===
+PASS: prefix 366 plies, 14 independent N/B/R/Q choices, no raw attacks on either king
+PASS: 22 independent deletion routes; longest 20 plies; max within-phase repeats 1 ; initial overlap 2
+PASS: common 17-ply two-knight mating suffix; no premature dead position or automatic draw
+White families 1398 black families 700 intersection 700
+Distinct unordered profiles 733950
+N	PROFILES
+4	1
+5	4
+6	20
+7	60
+8	170
+9	396
+10	868
+11	1716
+12	3235
+13	5719
+14	9726
+15	15705
+16	24270
+17	35475
+18	49373
+19	65187
+20	81956
+21	96873
+22	105455
+23	100716
+24	78645
+25	44520
+26	13860
+
+=== optional_master ===
+PASS: prefix 381 plies, 9 four-way and 2 five-way choices; no raw attacks
+PASS: 21 independent deletion routes; longest 20 plies; max within-phase repeats 1 ; initial overlap 3
+PASS: common 16 ply two-knight mating suffix; no premature dead position or automatic draw
+Fixed optional material P,N,B,R,Q [2, 0, 2, 2, 1] [0, 1, 2, 0, 0] wildcards 5 6 5-way 2 0
+White families 2410 black families 518 intersection 459
+Distinct unordered profiles 1143269
+N	PROFILES
+4	1
+5	5
+6	29
+7	105
+8	335
+9	890
+10	2146
+11	4672
+12	9451
+13	17675
+14	30757
+15	49522
+16	74066
+17	102679
+18	131936
+19	155624
+20	165887
+21	155198
+22	122227
+23	76552
+24	34188
+25	9324
+
+=== doubled_pair ===
+PASS: reachable six-piece setup, 754 plies
+PASS: all 21 local branches with identical occupancy and side to move
+PASS: shared deletion and checkmate continuation for all choices
+15 distinct material outcomes: 1 + 4 + 10; no global profile enumeration
+
+=== Counting and reduction ===
+8 nonpawn loss classes: 248 oriented 483 fixed under swap 13
+Special 25-piece master: 1 pawn + 6 nonpawns of the smaller side
+Total sufficient classes for N<=24: 249 (conditional on master construction)
+N=25: 483 one-pawn-loss classes, 267 no-pawn-loss classes
+Old family: 733950 new family: 1143269
+Union: 1672566 intersection: 204653
+Union with >=1 pawn: 938616
+N	old	new	union
+4	1	1	1
+5	4	5	5
+6	20	29	29
+7	60	105	105
+8	170	335	335
+9	396	890	890
+10	868	2146	2146
+11	1716	4672	4673
+12	3235	9451	9480
+13	5719	17675	17872
+14	9726	30757	31583
+15	15705	49522	52014
+16	24270	74066	80003
+17	35475	102679	114587
+18	49373	131936	153145
+19	65187	155624	190292
+20	81956	165887	218729
+21	96873	155198	229173
+22	105455	122227	214403
+23	100716	76552	172564
+24	78645	34188	112833
+25	44520	9324	53844
+26	13860	0	13860
